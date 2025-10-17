@@ -1,0 +1,265 @@
+/* Pantalla de apertura simple y efectiva */
+.opening-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #284654 0%, #1a2f3a 100%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOutOverlay 6s ease-in-out forwards;
+}
+
+.opening-title {
+  font-family: "Lilita One", Helvetica;
+  font-size: 120px;
+  color: #f9f2e8;
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: titleAppear 2s ease-out 0.5s forwards;
+  text-shadow: 0 0 30px rgba(249, 242, 232, 0.5);
+}
+
+.opening-subtitle {
+  font-family: "Manjari", Helvetica;
+  font-size: 24px;
+  color: #f9f2e8;
+  text-align: center;
+  opacity: 0;
+  animation: subtitleAppear 1.5s ease-out 2s forwards;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Animaciones de la pantalla de apertura */
+@keyframes fadeOutOverlay {
+  0% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { 
+    opacity: 0; 
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@keyframes titleAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes subtitleAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animaciones generales */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes starBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.star-blink {
+  animation: starBlink 0.8s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    border-right-color: #DC6B5E;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Clases de animación */
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.8s ease-out forwards;
+}
+
+.animate-bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.6s;
+}
+
+.vector-float {
+  animation: floatOnce 4s ease-in-out forwards;
+}
+
+@keyframes floatOnce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.vector-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.button-hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(223, 38, 0, 0.4);
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(223, 38, 0, 0.6);
+}

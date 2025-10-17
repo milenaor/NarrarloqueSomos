@@ -1,0 +1,300 @@
+.guion-ia {
+  background: linear-gradient(135deg, #629B99 0%, #4A7C7A 100%);
+  min-height: 100vh;
+  color: #F9F2E8;
+  font-family: "Manjari", Helvetica;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 120px 0 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-content {
+  max-width: 1200px;
+}
+
+.main-title {
+  font-family: "Lilita One", Helvetica;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 100px;
+  color: #F9F2E8;
+  margin-bottom: 40px;
+}
+
+.hero-description {
+  font-size: 30px;
+  line-height: 45px;
+  color: #F9F2E8;
+  font-weight: 700;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-visual img {
+  max-width: 600px;
+  height: auto;
+}
+
+/* Process Section */
+.process-section {
+  padding: 80px 0;
+}
+
+.process-description {
+  font-size: 30px;
+  line-height: 45px;
+  color: #F9F2E8;
+  font-weight: 700;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Steps Section */
+.steps-section {
+  padding: 80px 0;
+  background: #F1FFEB;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.steps-title {
+  font-family: "Manjari", Helvetica;
+  font-size: 30px;
+  font-weight: 700;
+  color: #629B99;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  background: #F1FFEB;
+  border: 2px solid #629B99;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.step-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  font-family: "Lilita One", Helvetica;
+  font-size: 96px;
+  font-weight: 400;
+  color: #629B99;
+  min-width: 120px;
+  text-align: center;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content p {
+  font-size: 30px;
+  line-height: 45px;
+  color: #629B99;
+  font-weight: 700;
+}
+
+.step-visual {
+  min-width: 200px;
+  text-align: center;
+}
+
+.step-visual img {
+  max-width: 200px;
+  height: auto;
+}
+
+.analysis-chart {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 10px;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+  height: 100%;
+}
+
+.bar {
+  width: 20px;
+  background: linear-gradient(to top, #629B99, #4A7C7A);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.bar:hover {
+  transform: scaleY(1.1);
+}
+
+/* Result Section */
+.result-section {
+  padding: 80px 0;
+}
+
+.result-title {
+  font-family: "Manjari", Helvetica;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 100px;
+  color: #F9F2E8;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.result-title .highlight {
+  font-weight: 700;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: #F1FFEB;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Manjari", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.nav-button.primary {
+  background: #629B99;
+  color: #F9F2E8;
+}
+
+.nav-button.secondary {
+  background: #629B99;
+  color: #FFFFFF;
+}
+
+.nav-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .main-title {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  
+  .hero-description,
+  .process-description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .result-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  
+  .hero-section {
+    padding: 80px 0 60px;
+  }
+  
+  .step-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .step-number {
+    font-size: 60px;
+  }
+  
+  .step-content p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .navigation {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+  .hero-description,
+  .process-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .result-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  
+  .step-number {
+    font-size: 48px;
+  }
+  
+  .steps-title {
+    font-size: 24px;
+  }
+}
