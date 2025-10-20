@@ -181,6 +181,44 @@
   font-weight: 700;
 }
 
+.container-100.green-light-background{
+  min-height: auto;
+  padding: 100px 20px;
+  background-color: #F1FFEB;
+  width: 100%;
+  position: relative;
+}
+
+.container-100.green-light-background p{
+  max-width: 1030px;
+  font-family: "Manjari", Helvetica;
+  font-weight: 400;
+  color: #629B99;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 80px;
+  padding-left: 30px;
+  margin-left: 20%;
+}
+
+.container-100 .wrapper{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.green-light-background .vector-1{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.green-light-background .vector-2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
 /* Navigation */
 .navigation {
   display: flex;
@@ -297,4 +335,8 @@
   .steps-title {
     font-size: 24px;
   }
+}
+
+.nav-button.prev img {
+  transform: rotate(180deg);
 }

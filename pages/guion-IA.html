@@ -1,141 +1,153 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/globals.css" />
-    <link rel="stylesheet" href="../css/guion-IA.css" />
-    <link rel="stylesheet" href="../css/animations.css" />
-  </head>
-  <body>
-    <!-- Menú flotante -->
-    <div class="floating-menu" id="floatingMenu">
-      <div class="menu-toggle" id="menuToggle">
-        <div class="menu-dots">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-      </div>
-      <div class="menu-content" id="menuContent">
-        <a href="../index.html" class="menu-item">
-          <div class="menu-icon home-icon"></div>
-          <span>Inicio</span>
-        </a>
-        <a href="introduccion.html" class="menu-item">
-          <div class="menu-icon intro-icon"></div>
-          <span>Laboratorio de Guion</span>
-        </a>
-        <a href="hallazgos.html" class="menu-item">
-          <div class="menu-icon findings-icon"></div>
-          <span>Hallazgos</span>
-        </a>
-        <a href="guion-IA.html" class="menu-item active">
-          <div class="menu-icon ai-icon"></div>
-          <span>GuionIA</span>
-        </a>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../css/globals.css" />
+  <link rel="stylesheet" href="../css/guion-IA.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+</head>
+<body>
+  <!-- Menú flotante -->
+  <div class="floating-menu" id="floatingMenu">
+    <div class="menu-toggle" id="menuToggle">
+      <div class="menu-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
       </div>
     </div>
+    <div class="menu-content" id="menuContent">
+      <a href="../index.html" class="menu-item">
+        <div class="menu-icon home-icon"></div>
+        <span>Inicio</span>
+      </a>
+      <a href="introduccion.html" class="menu-item">
+        <div class="menu-icon intro-icon"></div>
+        <span>Laboratorio de Guion</span>
+      </a>
+      <a href="hallazgos.html" class="menu-item">
+        <div class="menu-icon findings-icon"></div>
+        <span>Hallazgos</span>
+      </a>
+      <a href="guion-IA.html" class="menu-item active">
+        <div class="menu-icon ai-icon"></div>
+        <span>GuionIA</span>
+      </a>
+    </div>
+  </div>
 
-    <div class="guion-ia">
-      <div class="container">
+  <div class="guion-ia">
+    <div class="container">
+      
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <p class="hero-description animate-fade-in-up animate-delay-1">
+            Ahora te presentamos a
+          </p>
+          <h1 class="main-title animate-fade-in-up">GuioIA</h1>
+        </div>
+          <section class="process-section">
+        <div class="process-content animate-fade-in-up">
+          <p class="process-description">
+            La herramienta que desarrollamos en Centro Ático, que conecta las bases de datos de los participantes en el Laboratorio de Guion con OpenAI, para identificar patrones que permitan evidenciar el talento de la nueva generación de guionistas, así como sus intereses para direccionar los retos que se avecinan en la industra audiovisual con los nuevos talentos. 
+          </p>
+          <p class="process-description">
+            Solo basta con hacerle una pregunta y descubriras lo que están escribiendo los guionistas colombianos.
+          </p>
+        </div>
+      </section>
+        <div class="hero-visual animate-fade-in-up">
+          <img src="../img/vector-guionIA.svg" alt="Objetos tecnológicos" />
+        </div>
+      </section>
+
+      
+
+      <!-- Steps Section 
+      <section class="steps-section">
+        <h2 class="steps-title">Estos son los pasos que seguimos para realizar este análisis:</h2>
         
-        <!-- Hero Section -->
-        <section class="hero-section">
-          <div class="hero-content">
-            <p class="hero-description animate-fade-in-up animate-delay-1">
-              Ahora te presentamos a
-            </p>
-            <h1 class="main-title animate-fade-in-up">GuioIA</h1>
+        <div class="steps-container">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <p>Bases de datos consolidadas con la información de varios años y eventos.</p>
+            </div>
+            <div class="step-visual">
+              <img src="https://c.animaapp.com/mfmus6pb7L3zlF/img/group-13.png" alt="Base de datos" />
+            </div>
           </div>
-            <section class="process-section">
-          <div class="process-content">
-            <p class="process-description">
-              La herramienta que desarrollamos en Centro Ático, que conecta las bases de datos de los participantes en el Laboratorio de Guion con OpenAI, para identificar patrones que permitan evidenciar el talento de la nueva generación de guionistas, así como sus intereses para direccionar los retos que se avecinan en la industra audiovisual con los nuevos talentos. 
-            </p>
-            <p class="process-description">
-              Solo basta con hacerle una pregunta y descubriras lo que están escribiendo los guionistas colombianos.
-            </p>
-          </div>
-        </section>
-          <div class="hero-visual animate-scale-in animate-delay-2">
-            <img src="https://c.animaapp.com/mfmus6pb7L3zlF/img/objects.svg" alt="Objetos tecnológicos" />
-          </div>
-        </section>
-
-        
-
-        <!-- Steps Section -->
-        <section class="steps-section">
-          <h2 class="steps-title">Estos son los pasos que seguimos para realizar este análisis:</h2>
           
-          <div class="steps-container">
-            <div class="step-item">
-              <div class="step-number">1</div>
-              <div class="step-content">
-                <p>Bases de datos consolidadas con la información de varios años y eventos.</p>
-              </div>
-              <div class="step-visual">
-                <img src="https://c.animaapp.com/mfmus6pb7L3zlF/img/group-13.png" alt="Base de datos" />
-              </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <p>Un procesamiento automatizado con Python y Google Colab que lanza preguntas específicas a OpenAI para clasificar los guiones.</p>
             </div>
-            
-            <div class="step-item">
-              <div class="step-number">2</div>
-              <div class="step-content">
-                <p>Un procesamiento automatizado con Python y Google Colab que lanza preguntas específicas a OpenAI para clasificar los guiones.</p>
-              </div>
-              <div class="step-visual">
-                <img src="https://c.animaapp.com/mfmus6pb7L3zlF/img/group-14.png" alt="Procesamiento" />
-              </div>
+            <div class="step-visual">
+              <img src="https://c.animaapp.com/mfmus6pb7L3zlF/img/group-14.png" alt="Procesamiento" />
             </div>
-            
-            <div class="step-item">
-              <div class="step-number">3</div>
-              <div class="step-content">
-                <p>Exportación de resultados a archivos estructurados y luego diseño de análisis.</p>
-              </div>
-              <div class="step-visual">
-                <div class="analysis-chart">
-                  <div class="chart-bars">
-                    <div class="bar" style="height: 60%;"></div>
-                    <div class="bar" style="height: 80%;"></div>
-                    <div class="bar" style="height: 40%;"></div>
-                    <div class="bar" style="height: 90%;"></div>
-                  </div>
+          </div>
+          
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <p>Exportación de resultados a archivos estructurados y luego diseño de análisis.</p>
+            </div>
+            <div class="step-visual">
+              <div class="analysis-chart">
+                <div class="chart-bars">
+                  <div class="bar" style="height: 60%;"></div>
+                  <div class="bar" style="height: 80%;"></div>
+                  <div class="bar" style="height: 40%;"></div>
+                  <div class="bar" style="height: 90%;"></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>-->
 
-        <!-- Process Description -->
+      <!-- Navigation -->
+      
+    </div>
+    <div class="container-100 green-light-background">
+        <div class="wrapper">
+          <p class="text-wrapper animate-fade-in-up">
+            GuionIA es la evidencia de que los datos y la sensibilidad pueden caminar juntos para reconocer y potenciar a la nueva generación de guionistas del país.
+          </p>
+          <img class="vector-1 animate-fade-in-up" src="../img/Group-guion.svg" />
+          <img class="vector-2 animate-fade-in-up" src="../img/Vector-guion.svg" />          
+        </div>
+      </div>
+      <div class="container">
         <section class="process-section">
-          <div class="process-content">
-            <p class="process-description">
-              La herramienta que desarrollamos en Centro Ático, que conecta las bases de datos de los participantes en el Laboratorio de Guion con OpenAI, para identificar patrones que permitan evidenciar el talento de la nueva generación de guionistas, así como sus intereses para direccionar los retos que se avecinan en la industra audiovisual con los nuevos talentos. 
+        <div class="process-content">
+          <p class="process-description">
+            La herramienta que desarrollamos en Centro Ático, que conecta las bases de datos de los participantes en el Laboratorio de Guion con OpenAI, para identificar patrones que permitan evidenciar el talento de la nueva generación de guionistas, así como sus intereses para direccionar los retos que se avecinan en la industra audiovisual con los nuevos talentos. 
 
 Solo basta con hacerle una pregunta y descubriras lo que están escribiendo los guionistas colombianos.
-            </p>
-          </div>
-        </section>
-
-        <!-- Navigation -->
+          </p>
+        </div>
+      </section>
+      </div>
+      <div class="footer">
         <div class="navigation">
-          <a href="hallazgos.html" class="nav-button secondary">
-            <img src="https://c.animaapp.com/mfmus6pb7L3zlF/img/arrow-left-1.svg" alt="Volver" />
+          <a href="hallazgos.html" class="nav-button secondary prev">
+            <img src="../img/arrow.svg" alt="Volver" />
             <span>Volver</span>
           </a>
-          <a href="../index.html" class="nav-button primary">
+          <a href="../index.html" class="nav-button primary next">
             <span>Ir al inicio</span>
-            <img src="https://c.animaapp.com/mfmus6pb7L3zlF/img/arrow-left-2.svg" alt="Inicio" />
+            <img src="../img/arrow.svg" alt="Continuar" />
           </a>
         </div>
       </div>
-    </div>
+  </div>
 
-    <script src="../js/script.js"></script>
-    <script src="../js/floating-menu.js"></script>
-  </body>
+  <script src="../js/script.js"></script>
+  <script src="../js/floating-menu.js"></script>
+</body>
 </html>
