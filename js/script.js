@@ -104,23 +104,33 @@ setTimeout(() => {
     importantElements.forEach(element => element.classList.add('animate-wiggle'));
 }, 2000);
 
-// Animar números
+// Animar números con GSAP y ScrollTrigger
 function animateNumbers() {
-    const numberElements = document.querySelectorAll('[class*="text-wrapper-43"], [class*="text-wrapper-76"], [class*="text-wrapper-77"]');
+    const numberElements = document.querySelectorAll('.number-count');
     numberElements.forEach(element => {
         const finalNumber = parseInt(element.textContent);
+
         if (!isNaN(finalNumber) && finalNumber > 0) {
-            let currentNumber = 0;
-            const increment = finalNumber / 50;
-            const timer = setInterval(() => {
-                currentNumber += increment;
-                if (currentNumber >= finalNumber) {
-                    element.textContent = finalNumber;
-                    clearInterval(timer);
-                } else {
-                    element.textContent = Math.floor(currentNumber);
+            // Inicializar en 0
+            element.textContent = '0';
+
+            // Crear animación GSAP con ScrollTrigger
+            const obj = { count: 0 };
+
+            gsap.to(obj, {
+                count: finalNumber,
+                duration: 2,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 80%",
+                    end: "bottom 20%",
+                    toggleActions: "play none none none"
+                },
+                onUpdate: function() {
+                    element.textContent = Math.floor(obj.count);
                 }
-            }, 50);
+            });
         }
     });
 }
