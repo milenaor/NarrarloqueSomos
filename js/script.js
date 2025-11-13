@@ -36,8 +36,8 @@ function typewriterTitle() {
 
 // Efecto typewriter para el párrafo principal
 function typewriterParagraph() {
-    const text = 'Este especial es el resultado de una búsqueda: la de entender, a través de los datos y de la lectura sensible, qué están escribiendo los estudiantes y revela lo que motiva, emociona y transforma a quienes están narrando el país desde sus historias.';
-    const highlightWords = ['búsqueda', 'datos', 'lectura sensible', 'escribiendo', 'estudiantes', 'motiva', 'emociona', 'transforma', 'narrando', 'país', 'historias'];
+    const text = '¿Qué motiva y emociona a los jóvenes universitarios que se atreven a escribir para hacer cine en Colombia? Este informe es el resultado de la lectura sensible de sus trabajos durante los últimos 3 años.';
+    const highlightWords = ['jóvenes', 'escribir', 'cine en Colombia', 'lectura sensible', '3 años'];
     const typewriterElement = document.getElementById('typewriter-paragraph');
     if (!typewriterElement) return;
 
