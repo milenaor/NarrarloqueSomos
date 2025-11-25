@@ -18,7 +18,7 @@
   line-height: 35px;
 }
 
-.hallazgos .p{
+.hallazgos .p {
   max-width: 900px;
   margin: 0 auto;
 }
@@ -1776,10 +1776,10 @@
 
 .hallazgos .vector-75 {
   position: absolute;
-  width: 11.65%;
-  height: 12.10%;
+  width: 20.65%;
+  height: 23.1%;
   top: 39.77%;
-  left: 46.84%;
+  left: 41.84%;
 }
 
 .hallazgos .text-wrapper-85 {
@@ -1800,8 +1800,8 @@
 .hallazgos .text-wrapper-86 {
   width: 13.57%;
   height: 6.67%;
-  top: 43.29%;
-  left: 46.11%;
+  top: 44.29%;
+  left: 45.11%;
   font-family: "Lilita One", Helvetica;
   font-weight: 400;
   color: #576273;
@@ -1844,19 +1844,20 @@
 }
 
 .hallazgos .text-wrapper-88 {
-  width: 16.68%;
+  width: 12.68%;
   height: 4.24%;
-  top: 54.69%;
-  left: 42.99%;
+  top: 51.69%;
+  left: 44.99%;
   font-family: "Manjari", Helvetica;
   font-weight: 700;
   color: #576273;
   font-size: 25px;
   text-align: center;
   line-height: 35px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   position: absolute;
   letter-spacing: 0;
+  word-break: break-word;
 }
 
 .hallazgos .text-wrapper-89 {
@@ -1878,14 +1879,14 @@
   position: absolute;
   width: 17.55%;
   height: 22.32%;
-  top: 63.66%;
+  top: 65.66%;
   left: 38.96%;
 }
 
 .hallazgos .text-wrapper-90 {
   width: 13.57%;
   height: 6.67%;
-  top: 67.84%;
+  top: 69.84%;
   left: 40.98%;
   font-family: "Lilita One", Helvetica;
   font-weight: 400;
@@ -1916,7 +1917,7 @@
   position: absolute;
   width: 17.23%;
   height: 8.85%;
-  top: 74.51%;
+  top: 76.51%;
   left: 38.96%;
   font-family: "Manjari", Helvetica;
   font-weight: 700;
@@ -3225,7 +3226,7 @@
   background-color: #deedf0;
 }
 
-.hallazgos .container.blue-light-background{
+.hallazgos .container.blue-light-background {
   min-height: auto;
   padding: 100px 20px;
 }
@@ -3396,8 +3397,8 @@
 
 .hallazgos .vector-113 {
   position: absolute;
-    top: -200px;
-    left: 0;
+  top: -200px;
+  left: 0;
 }
 
 .hallazgos .vector-114 {
@@ -3547,9 +3548,9 @@
   left: -2.36%;
 }
 
-.hallazgos .section5 .map-colombia{
+.hallazgos .section5 .map-colombia {
   position: absolute;
-  left: 0;  
+  left: 0;
 }
 
 .popup-trigger {
@@ -3557,16 +3558,19 @@
 }
 
 .popup-overlay {
-  display: flex;                 /* <<< important: centers popup-content */
+  display: flex;
+  /* <<< important: centers popup-content */
   justify-content: center;
   align-items: center;
   position: fixed;
-  inset: 0;                      /* shorthand for top/right/bottom/left: 0 */
+  inset: 0;
+  /* shorthand for top/right/bottom/left: 0 */
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;          /* prevents clicks when hidden */
+  pointer-events: none;
+  /* prevents clicks when hidden */
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -3590,83 +3594,92 @@
   transition: transform 0.3s ease;
 }
 
-.popup-content.blue-dark{
+.popup-content.blue-dark {
   background: url('../img/background-colors/dark-blue.jpg') no-repeat center center/cover;
 }
 
-.popup-content.blue-dark h3, .popup-content.blue-dark .close-btn{
+.popup-content.blue-dark h3,
+.popup-content.blue-dark .close-btn {
   background-color: #DEEDF0;
   color: #629B99;
 }
 
-.popup-content.yellow-dark{
+.popup-content.yellow-dark {
   background: url('../img/background-colors/dark-yellow.jpg') no-repeat center center/cover;
 }
 
-.popup-content.yellow-dark h3, .popup-content.yellow-dark .close-btn{
+.popup-content.yellow-dark h3,
+.popup-content.yellow-dark .close-btn {
   background-color: #844404;
   color: #fff;
 }
 
-.popup-content.gold{
+.popup-content.gold {
   background: url('../img/background-colors/gold.jpg') no-repeat center center/cover;
 }
 
-.popup-content.gold h3, .popup-content.gold .close-btn{
+.popup-content.gold h3,
+.popup-content.gold .close-btn {
   background-color: #F0E5DB;
   color: #8F634E;
 }
 
-.popup-content.green{
+.popup-content.green {
   background: url('../img/background-colors/green.jpg') no-repeat center center/cover;
 }
 
-.popup-content.green h3, .popup-content.green .close-btn{
+.popup-content.green h3,
+.popup-content.green .close-btn {
   background-color: #F3E7DD;
   color: #629B99;
 }
 
-.popup-content.light-orange{
+.popup-content.light-orange {
   background: url('../img/background-colors/light-orange.jpg') no-repeat center center/cover;
 }
 
-.popup-content.light-orange h3, .popup-content.light-orange .close-btn{
+.popup-content.light-orange h3,
+.popup-content.light-orange .close-btn {
   background-color: #D57215;
   color: #fff;
 }
 
-.popup-content.orange{
+.popup-content.orange {
   background: url('../img/background-colors/orange.jpg') no-repeat center center/cover;
 }
 
-.popup-content.orange h3, .popup-content.orange .close-btn{
+.popup-content.orange h3,
+.popup-content.orange .close-btn {
   background-color: #ECB462;
   color: #fff;
 }
 
-.popup-content.pink{
+.popup-content.pink {
   background: url('../img/background-colors/pink.jpg') no-repeat center center/cover;
 }
 
-.popup-content.pink h3, .popup-content.pink .close-btn{
+.popup-content.pink h3,
+.popup-content.pink .close-btn {
   background-color: #F0E5DB;
   color: #BC4E4F;
 }
 
-.popup-content.red{
+.popup-content.red {
   background: url('../img/background-colors/red.jpg') no-repeat center center/cover;
 }
 
-.popup-content.red h3, .popup-content.red .close-btn{
+.popup-content.red h3,
+.popup-content.red .close-btn {
   background-color: #F0E5DB;
   color: #BC4E4F;
 }
 
-.popup-content.salmon{
+.popup-content.salmon {
   background: url('../img/background-colors/salmon.jpg') no-repeat center center/cover;
 }
 
-.popup-content.salmon h3, .popup-content.salmon .close-btn{
+.popup-content.salmon h3,
+.popup-content.salmon .close-btn {
   background-color: #FBC3B1;
   color: #BC4E4F;
 }
@@ -3675,7 +3688,7 @@
   transform: translateY(0);
 }
 
-.popup-content h3{
+.popup-content h3 {
   font-size: 40px;
   font-family: "Lilita One", Helvetica;
   padding: 10px 20px;
@@ -3685,7 +3698,7 @@
   max-width: 730px;
 }
 
-.popup-content h3 small{
+.popup-content h3 small {
   font-size: 25px;
   font-family: "Manjari", Helvetica;
   display: block;
@@ -3693,13 +3706,13 @@
   margin: 10px 0;
 }
 
-.popup-content h4{
+.popup-content h4 {
   font-size: 25px;
   font-family: "Manjari", Helvetica;
   margin: 20px 0;
 }
 
-.popup-content p{
+.popup-content p {
   font-size: 40px;
   font-family: "Manjari", Helvetica;
   width: 70%;
@@ -3708,15 +3721,15 @@
   align-items: flex-start;
 }
 
-.popup-content p:nth-child(2){
+.popup-content p:nth-child(2) {
   margin-left: 20%;
 }
 
-.popup-content p:last-child{
+.popup-content p:last-child {
   float: right;
 }
 
-.popup-content p:before{
+.popup-content p:before {
   content: " ";
   display: block;
   width: 120px;
