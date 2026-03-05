@@ -36,8 +36,8 @@ function typewriterTitle() {
 
 // Efecto typewriter para el párrafo principal
 function typewriterParagraph() {
-    const text = '¿Qué motiva y emociona a los jóvenes universitarios que se atreven a escribir para hacer cine en Colombia? Este informe es el resultado de la lectura sensible de sus trabajos durante los últimos 3 años.';
-    const highlightWords = ['jóvenes', 'escribir', 'cine en Colombia', 'lectura sensible', '3 años'];
+    const text = '¿Qué motiva y emociona a los jóvenes universitarios que se atreven a escribir para hacer cine en Colombia? Este informe es el resultado de la lectura sensible de sus trabajos durante los últimos 4 años.';
+    const highlightWords = ['jóvenes', 'escribir', 'cine en Colombia', 'lectura sensible', '4 años'];
     const typewriterElement = document.getElementById('typewriter-paragraph');
     if (!typewriterElement) return;
 

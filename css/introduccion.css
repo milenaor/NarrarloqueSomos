@@ -3662,4 +3662,83 @@ html {
     gap: 20px;
     padding: 40px 20px;
   }
+
+  .introduccion .text-wrapper-4 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .introduccion .text-wrapper-8 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .introduccion .text-wrapper-3 {
+    font-size: 120px;
+    width: 100%;
+  }
+
+  .introduccion .p {
+    width: 100%;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .introduccion .text-wrapper-5 {
+    width: 100%;
+  }
+
+  .introduccion .text-wrapper-6 {
+    white-space: normal;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .introduccion .text-wrapper-11 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .estudiantes-239 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-button {
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .introduccion .text-wrapper-4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .introduccion .text-wrapper-8 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .introduccion .text-wrapper-3 {
+    font-size: 80px;
+  }
+
+  .introduccion .p {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .introduccion .text-wrapper-11 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .nav-button {
+    font-size: 16px;
+    padding: 10px 16px;
+    width: 100%;
+    justify-content: center;
+  }
 }

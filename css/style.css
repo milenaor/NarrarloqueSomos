@@ -774,6 +774,43 @@ z-index: 10;
   .image-group{
     flex-direction: column;
   }
+
+  .horizontal-scroll-section {
+    height: auto;
+    overflow: visible;
+  }
+
+  .horizontal-scroll-container {
+    flex-direction: column;
+  }
+
+  .horizontal-slide {
+    height: auto;
+    min-height: auto;
+    padding: 3rem 1.5rem;
+    width: 100% !important;
+    transform: none !important;
+  }
+
+  .horizontal-slide .fz-50 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .horizontal-slide img {
+    max-height: none;
+    max-width: 100%;
+  }
+
+  .horizontal-slide .vector-back-1,
+  .horizontal-slide .vector-back-2 {
+    display: none;
+  }
+
+  .interactive-action {
+    max-width: 100%;
+    margin: 40px auto;
+  }
 }
 
 .horizontal-scroll-section {

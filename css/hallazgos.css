@@ -3757,3 +3757,132 @@
   justify-content: center;
   font-size: 40px;
 }
+
+@media (max-width: 768px) {
+  .hallazgos .text-wrapper-3,
+  .hallazgos .text-wrapper-140 {
+    font-size: 48px;
+    line-height: 56px;
+    margin: 40px auto;
+  }
+
+  .hallazgos .p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .hallazgos .algunos-escriben,
+  .hallazgos .span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .hallazgos .la-principal,
+  .hallazgos .guionia-clasific-los,
+  .hallazgos .centro-atico-paragraph {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px auto;
+  }
+
+  .hallazgos .text-wrapper-144 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-left: 0;
+    border-left-width: 6px;
+  }
+
+  .hallazgos .text-wrapper-136 {
+    font-size: 20px;
+    line-height: 28px;
+    white-space: normal;
+  }
+
+  .hallazgos .palabras-como {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  .hallazgos .group-3 {
+    height: auto;
+    min-height: auto;
+  }
+
+  .popup-content {
+    padding: 20px;
+    margin: 10px;
+    max-width: calc(100vw - 20px);
+  }
+
+  .popup-content h3 {
+    font-size: 24px;
+    max-width: 100%;
+  }
+
+  .popup-content p {
+    font-size: 20px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .popup-content p:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .popup-content p:last-child {
+    float: none;
+  }
+
+  .popup-content p:before {
+    width: 60px;
+    height: 28px;
+  }
+
+  .nav-button {
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hallazgos .text-wrapper-3,
+  .hallazgos .text-wrapper-140 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .hallazgos .text-wrapper-144 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .hallazgos .text-wrapper-136 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .popup-content h3 {
+    font-size: 20px;
+  }
+
+  .popup-content p {
+    font-size: 17px;
+  }
+
+  .nav-button {
+    font-size: 16px;
+    padding: 10px 16px;
+    width: 100%;
+    justify-content: center;
+  }
+}
