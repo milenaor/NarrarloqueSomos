@@ -186,6 +186,8 @@ const slides = gsap.utils.toArray(".horizontal-slide");
 let currentSlide = 0;
 let isAnimating = false;
 let isScrollEnabled = false;
+let firstSlideScrollCount = 0;
+const FIRST_SLIDE_SCROLL_THRESHOLD = 4; // ticks de scroll necesarios para salir del primer slide
 
 // Ajuste dinámico: se adapta al número de slides
 const slideWidth = 100 / slides.length;
@@ -238,6 +240,11 @@ function handleScroll(e) {
 
   // Scroll hacia abajo - avanzar slides (solo si no estamos en el último)
   if (e.deltaY > 0 && currentSlide < slides.length - 1) {
+    if (currentSlide === 0) {
+      firstSlideScrollCount++;
+      if (firstSlideScrollCount < FIRST_SLIDE_SCROLL_THRESHOLD) return;
+      firstSlideScrollCount = 0;
+    }
     currentSlide++;
     goToSlide(currentSlide);
   }
@@ -310,12 +317,14 @@ const trigger = ScrollTrigger.create({
   scrub: false, // Desactivamos scrub porque usamos eventos personalizados del mouse
   onEnter: () => {
     isScrollEnabled = true;
+    firstSlideScrollCount = 0;
     hideNavigation();
     window.addEventListener("wheel", handleScroll, { passive: false });
     // Solo usar eventos del mouse, no teclado
   },
   onEnterBack: () => {
     isScrollEnabled = true;
+    firstSlideScrollCount = 0;
     hideNavigation();
     currentSlide = 0;
     goToSlide(0);
